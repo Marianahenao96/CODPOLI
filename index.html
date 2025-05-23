@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DENTISUR | Clínica Dental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Tu sonrisa, nuestra prioridad</h1>
+    <p>Atención dental profesional con tecnología avanzada</p>
+    <img src="./img/logo.jpg" alt="Logo de Dentisur" />
+  </header>
+
+  <!-- Reserva de Citas -->
+  <section id="reserva-citas">
+    <h2>Reserva tu Cita</h2>
+    <form id="formulario-cita">
+      <label for="nombre-paciente">Nombre:</label>
+      <input type="text" id="nombre-paciente" placeholder="Tu nombre" required />
+
+      <label for="servicio-seleccion">Servicio:</label>
+      <select id="servicio-seleccion" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="Implantología Oral">Implantología Oral</option>
+        <option value="Rehabilitación Oral">Rehabilitación Oral</option>
+        <option value="Ortodoncia">Ortodoncia</option>
+      </select>
+
+      <button type="submit">Agendar Cita</button>
+    </form>
+
+    <div id="citas-agendadas">
+      <h3>Citas Agendadas</h3>
+      <ul id="lista-citas"></ul>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+
+    <ul>
+      <li>🦷 Estética Dental</li>
+      <li>🔩 Implantes y Rehabilitación Oral</li>
+      <li>🧼 Limpieza y Prevención</li>
+      <li>🧬 Endodoncia y Periodoncia</li>
+    </ul>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En Dentisur celebramos más de dos décadas cuidando tu salud bucal en Envigado.
+      Nuestro equipo especializado ofrece servicios como estética dental, implantes, endodoncia y periodoncia.
+    </p>
+
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
