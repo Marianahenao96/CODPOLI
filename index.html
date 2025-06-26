@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DENTISUR | Clínica Dental</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <!-- Encabezado -->
+  <!-- Hero / Encabezado -->
   <header>
     <h1>Tu sonrisa, nuestra prioridad</h1>
     <p>Atención dental profesional con tecnología avanzada</p>
-    <img src="./img/logo.jpg" alt="Logo de Dentisur" />
+    <div>
+      <img src="./image/logo.jpg" alt="Imagen de odontología">
+    </div>
   </header>
 
-  <!-- Reserva de Citas -->
-  <section id="reserva-citas">
-    <h2>Reserva tu Cita</h2>
-    <form id="formulario-cita">
-      <label for="nombre-paciente">Nombre:</label>
-      <input type="text" id="nombre-paciente" placeholder="Tu nombre" required />
-
-      <label for="servicio-seleccion">Servicio:</label>
-      <select id="servicio-seleccion" required>
-        <option value="">Selecciona un servicio</option>
-        <option value="Implantología Oral">Implantología Oral</option>
-        <option value="Rehabilitación Oral">Rehabilitación Oral</option>
-        <option value="Ortodoncia">Ortodoncia</option>
-      </select>
-
-      <button type="submit">Agendar Cita</button>
-    </form>
-
-    <div id="citas-agendadas">
-      <h3>Citas Agendadas</h3>
-      <ul id="lista-citas"></ul>
+  <!-- Sección de Servicios -->
+  <section id="servicio">
+    <h2>Nuestros Servicios</h2>
+  </section>
+  <section id="servicios">
+    <div class="Implante">
+      <img src="./image/implantologia.webp" alt="Implantología Oral">
+      <h3>Implantología Oral</h3>
+      <p>Recupera la sonrisa y la funcionalidad con nuestros tratamientos de implantología oral.</p>
+    </div>
+    <div class="Rehabilitacion">
+      <img src="./image/rehabilitacion.jpg" alt="Rehabilitación Oral">
+      <h3>Rehabilitación Oral</h3>
+      <p>Carillas, blanqueamiento, contorneado dental y más. Nuestro diseño de sonrisa integral te ofrece la transformación que buscas.</p>
+    </div>
+    <div class="Ortodoncia">
+      <img src="./image/ortodoncia.jpeg" alt="Ortodoncia">
+      <h3>Ortodoncia</h3>
+      <p>Logra la sonrisa alineada y funcional que siempre has deseado con nuestros tratamientos de ortodoncia.</p>
     </div>
   </section>
 
-  <!-- Servicios -->
-  <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-
-    <ul>
-      <li>🦷 Estética Dental</li>
-      <li>🔩 Implantes y Rehabilitación Oral</li>
-      <li>🧼 Limpieza y Prevención</li>
-      <li>🧬 Endodoncia y Periodoncia</li>
-    </ul>
-
-  <!-- Sobre Nosotros -->
+  <!-- Sección Sobre Nosotros -->
   <section id="nosotros">
     <h2>Sobre Nosotros</h2>
     <p>
-      En Dentisur celebramos más de dos décadas cuidando tu salud bucal en Envigado.
-      Nuestro equipo especializado ofrece servicios como estética dental, implantes, endodoncia y periodoncia.
+      En Dentisur, con orgullo celebramos más de dos décadas dedicadas a cuidar la salud y la estética dental de nuestros pacientes en Envigado.
+      Ofrecemos un portafolio completo de servicios especializados para que luzcas y sientas tu mejor sonrisa.
     </p>
+    <div>
+      <img src="./image/odontologo.jpg" alt="Equipo dental">
+    </div>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <blockquote>
+      <p>"Durante años sufrí la incomodidad de tener varios dientes perdidos. Esto afectaba mi confianza al sonreír y también mi capacidad para comer bien. Finalmente, decidí buscar una solución y encontré a Dentisur. El proceso de los implantes y la rehabilitación oral fue mucho más sencillo de lo que imaginaba, y el resultado ha sido increíble."</p>
+      <footer>– Carlos Pérez</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Siempre quise tener una sonrisa más armónica. En Dentisur me explicaron todas las opciones. Me decidí por brackets estéticos y un diseño de sonrisa. ¡El cambio ha sido espectacular!"</p>
+      <footer>– Ana Maria Gómez</footer>
+    </blockquote>
+  </section>
+
+  <!-- Sección de Contacto / Reserva de Cita -->
+ <!-- Sección de Contacto -->
+<section id="contacto">
+  <h2>Reserva tu cita</h2>
+  <form id="formulario-cita">
+    <label for="nombre">Nombre y Apellido *</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo Electrónico *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="servicio">Selecciona un servicio *</label>
+  <select id="servicio" name="servicio" required>
+  <option value="">-- Selecciona --</option>
+  <option value="Implantología Oral">Implantología Oral</option>
+  <option value="Rehabilitación Oral">Rehabilitación Oral</option>
+  <option value="Ortodoncia">Ortodoncia</option>
+  </select>
+
+
+    <label for="mensaje">Mensaje *</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensaje-reserva"></div>
+  <div id="lista-citas"></div>
+
+  <div>
+    <img src="./image/consulta.png" alt="Consulta odontológica">
+  </div>
+</section>
 
   </section>
 
-  <script src="index.js"></script>
+  <!-- Script principal -->
+  <script src="./index.js"></script>
 </body>
 </html>
